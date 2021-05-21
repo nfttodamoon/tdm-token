@@ -1,0 +1,33 @@
+{
+	"name": "tdm-token-contract",
+	"version": "0.0.1",
+	"description": "TODAMOON token contract implementation",
+	"scripts": {
+		"test": "npx hardhat test",
+		"coverage": "npx hardhat coverage",
+		"deploy-methane": "npx hardhat run scripts/Methane-deployer.js --network bsc",
+		"deploy-todamoon": "npx hardhat run scripts/TODAMOON-deployer.js --network bsc"
+	},
+	"keywords": [
+		"BEP-20",
+		"BSC",
+		"TDM"
+	],
+	"author": "TODAMOON Team",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"@nomiclabs/hardhat-ethers": "^2.0.2",
+		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"chai": "^4.3.4",
+		"ethereum-waffle": "^3.3.0",
+		"ethers": "^5.1.4",
+		"hardhat": "^2.2.1",
+		"hardhat-gas-reporter": "^1.0.4",
+		"solidity-coverage": "^0.7.16"
+	},
+	"dependencies": {
+		"@openzeppelin/contracts": "^4.1.0",
+		"@pancakeswap-libs/pancake-swap-core": "github:pancakeswap/pancake-swap-core",
+		"pancakeswap-peripheral": "github:pancakeswap/pancake-swap-periphery"
+	}
+}
